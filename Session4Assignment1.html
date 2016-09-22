@@ -1,0 +1,35 @@
+<!--Assignment: Create a speech bubble shape with CSS3-->
+
+<!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>CSS3-Session4-Assignment 1</title>
+ 
+ 	<style type="text/css">
+	
+			.bubble{
+				height: 150px;
+				width: 200px;
+				background-color: #5ac4ed;
+				margin-left: 100px;
+				margin-top: 50px;
+				border-radius: 20px;
+				position: absolute;
+			}
+	 
+			.bubble:before{
+				content: "";
+				position: absolute;
+				height: 0px;
+				width: 0px;
+				border-top: 25px solid transparent;
+				border-right: 40px solid #5ac4ed;
+				border-bottom: 25px solid transparent;
+				margin: 25px 0 0 -40px;
+			}
+ 	</style>
+ </head>
+ <body>
+	  <div class="bubble"></div>
+ </body>
+ </html>
